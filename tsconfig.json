@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"module" : "commonjs", //specify the module code generation method.
+		"esModuleInterop" : true, 
+		"target" : "es6", //specify the output language level.
+		"moduleResolution" : "node", //helps the compiler understand what import refers to
+		"sourceMap" : true,
+		"outDir" : "dist" //location of the output
+	},
+	"lib": ["es2015"]
+}
