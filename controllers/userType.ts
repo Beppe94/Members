@@ -4,7 +4,7 @@ type AdminUser = {
     email: string;
     firstName: string;
     lastName: string;
-    dashboardAccess: boolean;
+    adminPermission: boolean;
 }
 
 type MemberUser = {
@@ -15,3 +15,11 @@ type MemberUser = {
     lastName: string;
 }
 
+type GuestUser = {
+    role: "guest";
+
+}
+
+type User = AdminUser | MemberUser | GuestUser;
+
+export default User;
